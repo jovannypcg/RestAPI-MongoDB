@@ -1,0 +1,52 @@
+curl -i \
+	-X PUT \
+	-H "Accept: application/json" \
+	-H "Content-Type: application/json" \
+	-d '{
+    "firstName": "Jovanny Pablo",
+    "lastName": "Cruz Gomez",
+    "address": "Lago Atitlan 8",
+    "phoneNumber": "+525526632407",
+    "email": "jovannypcg@yahoo.com",
+    "twitterHandle": "@jovannypcg",
+    "facebookProfile": "https://www.facebook.com/jovannypcg",
+    "linkedInProfile": "http://www.linkedin.com/in/jovannypcg/ ",
+    "googlePlusProfile": "https://plus.google.com/+jovannypcg"
+}' \
+http://localhost:8080/contacts/56692548a826dec9e6b8249b
+
+
+curl -i \
+	-X POST \
+	-H "Accept: application/json" \
+	-H "Content-Type: application/json" \
+	-d '{
+    "firstName": "Jovanny Pablo",
+    "lastName": "Cruz Gomez",
+    "address": "Lago Atitlan 8",
+    "phoneNumber": "+525526632407",
+    "email": "jovannypcg@yahoo.com",
+    "twitterHandle": "@jovannypcg",
+    "facebookProfile": "https://www.facebook.com/jovannypcg",
+    "linkedInProfile": "http://www.linkedin.com/in/jovannypcg/ ",
+    "googlePlusProfile": "https://plus.google.com/+jovannypcg"
+}' \
+http://localhost:8080/contacts
+
+curl -i \
+	-X DELETE \
+	-H "Accept: application/json" \
+	-H "Content-Type: application/json" \
+	-d '{
+    "firstName": "Jovanny Pablo",
+    "lastName": "Cruz Gomez",
+    "address": "Lago Atitlan 8",
+    "phoneNumber": "+525526632407",
+    "email": "jovannypcg@yahoo.com",
+    "twitterHandle": "@jovannypcg",
+    "facebookProfile": "https://www.facebook.com/jovannypcg",
+    "linkedInProfile": "http://www.linkedin.com/in/jovannypcg/ ",
+    "googlePlusProfile": "https://plus.google.com/+jovannypcg"
+}' \
+http://localhost:8080/contacts/56692548a826dec9e6b8249b
+
